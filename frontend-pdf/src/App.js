@@ -11,7 +11,7 @@ import TCC2_Declaracao_Correcao from "./pages/Tcc2_declaracao_correcao";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Routes>
         <Route path="/TCC1_Vinculo" element={<TCC1_Vinculo />} />
         <Route path="/TCC1_Autorizacao" element={<TCC1_Autorizacao />} />
