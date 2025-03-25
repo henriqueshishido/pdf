@@ -1,0 +1,89 @@
+/* Estilos gerais para o formulário */
+.form-container {
+    padding: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Estilos para os campos do formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-textarea {
+    height: 100px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: 'row';
+    justify-content: center;
+}
+
+.header-title {
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+
+/* Estilos para o botão */
+.form-button {
+    width: 100%;
+    background-color: #ffc400;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #ffc400;
+}
+
+.button-text {
+    color: #000000;
+    font-weight: bold;
+    font-size: medium;
+
+}
+
+fieldset {
+    margin-bottom: 2em;
+    padding-top: 1em;
+    border: 2px solid #DEDEDE
+}
+
+textarea {
+    height: 10em;
+}
+
+.obs-avaliador { 
+    color: #999999;
+}
