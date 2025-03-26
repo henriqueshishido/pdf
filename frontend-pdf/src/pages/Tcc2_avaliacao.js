@@ -164,56 +164,61 @@ function App() {
             className="form-input"
           />
         </div>
-        <div className="form-group">
-          <label>Título do trabalho:</label>
-          <textarea
-            name="titulo"
-            value={form.titulo}
-            onChange={handleChange}
-            required
-            className="form-input"
-          />
-        </div>
-        <div className="form-group">
-          <label>Tipo do trabalho:</label>
-          <div>
-            <label>
-              <input
-                type="radio"
-                name="tipoVinculo"
-                value="desenvolvimento_pesquisa"
-                checked={form.tipoVinculo === 'desenvolvimento_pesquisa'}
-                onChange={handleChange}
-                required
-              />
-              DESENVOLVIMENTO/PESQUISA
-            </label>
 
+        <fieldset>
+          <legend>Sobre o trabalho</legend>
+          <div className="form-group">
+            <label>Título do trabalho:</label>
+            <textarea
+              name="titulo"
+              value={form.titulo}
+              onChange={handleChange}
+              required
+              className="form-input"
+            />
+          </div>
+          <div className="form-group">
+            <label>Tipo do trabalho:</label>
+            <div>
+              <label>
+                <input
+                  type="radio"
+                  name="tipoVinculo"
+                  value="desenvolvimento_pesquisa"
+                  checked={form.tipoVinculo === 'desenvolvimento_pesquisa'}
+                  onChange={handleChange}
+                  required
+                />
+                DESENVOLVIMENTO/PESQUISA
+              </label>
+
+              <label>
+                <input
+                  type="radio"
+                  name="tipoVinculo"
+                  value="convalidacao"
+                  checked={form.tipoVinculo === 'convalidacao'}
+                  onChange={handleChange}
+                  required
+                />
+                CONVALIDAÇÃO
+              </label>
+            </div>
+          </div>
+
+          <div className="form-group">
             <label>
               <input
-                type="radio"
-                name="tipoVinculo"
-                value="convalidacao"
-                checked={form.tipoVinculo === 'convalidacao'}
-                onChange={handleChange}
-                required
+                type="checkbox"
+                name="indicacaoTrabalho"
+                checked={checkboxIndicacao}
+                onChange={handleCheckboxChange}
               />
-              CONVALIDAÇÃO
+              Indicação de trabalho destaque para participação de eventuais premiações e concursos de TCC oferecidos pela UTFPR e outros órgãos da área
             </label>
           </div>
-        </div>
+        </fieldset>
 
-        <div className="form-group">
-          <label>
-            <input
-              type="checkbox"
-              name="indicacaoTrabalho"
-              checked={checkboxIndicacao}
-              onChange={handleCheckboxChange}
-            />
-            Indicação de trabalho destaque para participação de eventuais premiações e concursos de TCC oferecidos pela UTFPR e outros órgãos da área
-          </label>
-        </div>
 
         <fieldset>
           <legend>Banca avaliadora</legend>
